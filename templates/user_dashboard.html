@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Dashboard</h2>
+<h3>Recommended Products</h3>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - {{ product.price }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
